@@ -9,8 +9,10 @@ import org.testng.annotations.Test;
 public class Exercise6 {
 	@Test
 	public void runExercise6 (){
+		//Launch Chrome and go to the-internet website
 		WebDriver driver = new ChromeDriver();
 		  driver.get("https://the-internet.herokuapp.com/"); 
+		  //Click dropdown and select items by different methods
 		  driver.findElement(By.linkText("Dropdown")).click();
 		  Select dropdown = new Select(driver.findElement(By.id("dropdown")));
 		  dropdown.selectByIndex(2);

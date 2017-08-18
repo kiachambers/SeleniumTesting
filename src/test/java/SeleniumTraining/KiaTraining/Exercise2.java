@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 public class Exercise2 {
 	@Test
 	public void testmethod (){
+		//Launch Chrome and go to Google
 		WebDriver driver = new ChromeDriver();
 		  driver.get("http://www.google.com/xhtml");
 		 
