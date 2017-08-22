@@ -10,13 +10,14 @@ import org.testng.annotations.Test;
 
 public class Exercise8 {
 	@Test
-	public void runExercise6 (){
+	public void runExercise8 (){
 		WebDriver driver = new ChromeDriver();
 		  driver.get("https://the-internet.herokuapp.com/"); 
 		  driver.findElement(By.linkText("Sortable Data Tables")).click();
 		// Retrieve cell value by providing row and column number
 		  System.out.println("The text of the first cell in first column/row is below:");
-		  WebElement colValue= driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[1]/td[1]"));
+		  //WebElement colValue= driver.findElement(By.xpath("//table[@id='table1']/tbody/tr[1]/td[1]"));
+		  WebElement colValue= driver.findElement(By.xpath("//*[@id='table1']/thead/tr/th[1]/span"));
 		  System.out.println(colValue.getText());
 		  System.out.println("===============================================");
 		// Retrieve all the text of all cells in the first row
@@ -24,6 +25,29 @@ public class Exercise8 {
 		  WebElement firstRow= driver.findElement(By.cssSelector("table[id='table1'] tr:nth-child(1)"));
 		  System.out.println(firstRow.getText());
 		  System.out.println("===============================================");
+		  //Retrieve the row number of row that contains the cell with text ‘jdoe@hotmail.com’
+
+		  List<WebElement> element = driver.findElements(By.cssSelector("tr"));
+
+        int row = 0;
+
+        for( WebElement w : element){
+
+            String elemText = w.getText();
+
+            System.out.println(elemText);
+
+            String rowText = "jdoe@hotmail.com";
+
+            if(elemText.contains(rowText)){
+
+            System.out.println("Text in row " + row + " is " + rowText + "");
+            }
+
+            System.out.println("this was row " + row + "\n");
+
+            row++;
+        }
 		  
 		  //System.out.println("The text of the first cell in first column/row isbelow:");
 		  //List<WebElement> allColumnsInRow = driver.findElements(By.xpath("//table[@id='table1']/tbody/tr[1]/td[1]"));
