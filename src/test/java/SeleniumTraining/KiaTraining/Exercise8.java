@@ -29,13 +29,11 @@ public class Exercise8 {
 
 		  List<WebElement> element = driver.findElements(By.cssSelector("tr"));
 
-        int row = 0;
+        int row = 1;
 
         for( WebElement w : element){
 
             String elemText = w.getText();
-
-            System.out.println(elemText);
 
             String rowText = "jdoe@hotmail.com";
 
@@ -44,20 +42,10 @@ public class Exercise8 {
             System.out.println("Text in row " + row + " is " + rowText + "");
             }
 
-            System.out.println("this was row " + row + "\n");
-
             row++;
         }
 		  
-		  //System.out.println("The text of the first cell in first column/row isbelow:");
-		  //List<WebElement> allColumnsInRow = driver.findElements(By.xpath("//table[@id='table1']/tbody/tr[1]/td[1]"));
-		  //for(WebElement e: allColumnsInRow)
-		  //{
-		  	//System.out.println(e.getText());
-		  //}
-		 // WebElement Table_1 = driver.findElement(By.id("table1"));
-		  //List<WebElement> Rows = Table_1.findElements(By.tagName("tr"));
-		  //System.out.println("No. of rows: "+Rows.size()); 
+		
 		 
 		  }
 		 

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7442" started-at="2017-08-22T13:25:09Z" finished-at="2017-08-22T13:25:17Z">
+  <suite name="Default suite" duration-ms="5532" started-at="2017-08-22T13:54:03Z" finished-at="2017-08-22T13:54:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7442" started-at="2017-08-22T13:25:09Z" finished-at="2017-08-22T13:25:17Z">
+    <test name="Default test" duration-ms="5532" started-at="2017-08-22T13:54:03Z" finished-at="2017-08-22T13:54:09Z">
       <class name="SeleniumTraining.KiaTraining.Exercise8">
-        <test-method status="PASS" signature="runExercise8()[pri:0, instance:SeleniumTraining.KiaTraining.Exercise8@26be92ad]" name="runExercise8" duration-ms="7422" started-at="2017-08-22T09:25:09Z" finished-at="2017-08-22T09:25:17Z">
+        <test-method status="PASS" signature="runExercise8()[pri:0, instance:SeleniumTraining.KiaTraining.Exercise8@26be92ad]" name="runExercise8" duration-ms="5473" started-at="2017-08-22T09:54:03Z" finished-at="2017-08-22T09:54:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runExercise8 -->
